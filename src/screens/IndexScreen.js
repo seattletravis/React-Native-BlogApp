@@ -30,7 +30,7 @@ const IndexScreen = ({ navigation }) => {
   )
 }
 
-IndexScreen.navigationOptions = () => {
+IndexScreen.navigationOptions = ({ navigation }) => {
   return {
     headerRight: () => (
       <TouchableOpacity onPress={() => navigation.navigate('Create')}>
