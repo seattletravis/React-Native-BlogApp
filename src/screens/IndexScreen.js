@@ -34,7 +34,7 @@ IndexScreen.navigationOptions = () => {
   return {
     headerRight: () => (
       <TouchableOpacity onPress={() => navigation.navigate('Create')}>
-        <Feather name="plus" size={30} />
+        <Feather style={styles.icon2} name="plus" size={30} />
       </TouchableOpacity>
     ),
   };
@@ -55,6 +55,9 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 22,
+  },
+  icon2: {
+    marginRight: 30,
   }
 })
 
