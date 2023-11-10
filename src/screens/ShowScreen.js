@@ -11,8 +11,10 @@ const ShowScreen = ({ navigation }) => {
 
   return (
     <View>
-      <Text>{blogPost.title}</Text>
-      <Text>{blogPost.content}</Text>
+      <Text style={styles.title}>Title: </Text>
+      <Text style={styles.text}>{blogPost.title}</Text>
+      <Text style={styles.title}>Content: </Text>
+      <Text style={styles.text}>{blogPost.content}</Text>
     </View>
   )
 }
@@ -29,7 +31,13 @@ ShowScreen.navigationOptions = ({ navigation }) => {
 }
 
 const styles = StyleSheet.create({
+  text: {
+    marginBottom: 5,
+  },
+  title: {
+    fontWeight: 'bold',
 
+  }
 })
 
 export default ShowScreen
