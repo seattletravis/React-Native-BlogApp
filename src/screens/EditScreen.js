@@ -9,7 +9,9 @@ const EditScreen = ({ navigation }) => {
   const blogPost = state.find((blogPost) => blogPost.id === navigation.getParam('id'))
 
   return (
-    <BlogPostForm />
+    <BlogPostForm 
+    
+    />
   )
 }
 
